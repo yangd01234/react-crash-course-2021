@@ -8,6 +8,7 @@ const Header = ({ title }) => {
     )
 }
 
+// default prop that will always populate if no header given
 Header.defaultProps = {
     title: "Task Tracker Default",
 }
@@ -15,4 +16,10 @@ Header.defaultProps = {
 Header.propTypes = {
     title: PropTypes.string.isRequired,
 }
+
+// you can also style using const by adding a style={headingStyle} into tag
+//const headingStyle = {
+//    color: 'red',
+//    backgroundColor: 'black'
+//}
 export default Header
